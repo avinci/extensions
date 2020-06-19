@@ -1,0 +1,6 @@
+# 0.0.1 stepModel.yml
+configuration:
+  downloadURL:
+    type: Url
+  downloadPath:
+    type: String
