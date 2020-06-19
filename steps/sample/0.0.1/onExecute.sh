@@ -5,7 +5,7 @@ business_logic() {
   echo "$step_name's downloadURL value is $downloadURL"
   echo "$step_name's downloadPath value is $downloadPath"
   mkdir -p $downloadPath
-  curl $downloadURL --output $downloadPath/temp.zip
+  curl -L $downloadURL > $downloadPath/mono.tar.gz
   ls -al $downloadPath
 }
 execute_command business_logic
