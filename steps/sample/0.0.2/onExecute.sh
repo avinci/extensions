@@ -12,8 +12,5 @@ business_logic() {
   then
     tar -zxvf $downloadPath/mono.tar.gz
   fi
-  pushd $downloadPath/devops*
-    ls -al
-  popd
 }
 execute_command business_logic
