@@ -1,5 +1,0 @@
-configuration:
-  downloadURL:
-    type: Url
-  downloadPath:
-    type: String
