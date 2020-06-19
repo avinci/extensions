@@ -10,8 +10,7 @@ business_logic() {
   curl -L $downloadURL > $downloadPath/mono.tar.gz
   if [ $doUnzip ]
   then
-    tar -zxvf  mono.tar.gz
-    tar xz $downloadPath/mono.tar.gz
+    tar -zxvf $downloadPath/mono.tar.gz
   fi
   pushd $downloadPath/devops*
     ls -al
