@@ -4,6 +4,7 @@ business_logic() {
   local downloadPath=$(find_step_configuration_value "downloadPath")
   echo "$step_name's downloadURL value is $downloadURL"
   echo "$step_name's downloadPath value is $downloadPath"
+  mkdir -p $downloadPath
   curl $downloadURL --output $downloadPath/temp.zip
   ls -al $downloadPath
 }
