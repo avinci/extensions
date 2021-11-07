@@ -1,0 +1,11 @@
+configuration:
+  GitHub:
+    type: Integration
+    validate:
+      isIntegrationType: GitHub
+  gitUrl:
+    type: String
+  gitBranch:
+    type: String
+  gitRepoName:
+    type: String
