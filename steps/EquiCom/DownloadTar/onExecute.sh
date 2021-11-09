@@ -6,5 +6,9 @@ execute_step() {
   mkdir -p $downloadPath
   curl -L $downloadURL > $downloadPath/mono.tar.gz
   ls -al $downloadPath
+  if [ $doUnzip ]
+  then
+    tar -zxvf $downloadPath/mono.tar.gz
+  fi
 }
 execute_command execute_step

@@ -1,8 +1,0 @@
-# 0.0.2 stepModel.yml
-configuration:
-  downloadURL:
-    type: Url
-  downloadPath:
-    type: String
-  doUnzip:
-    type: Boolean
